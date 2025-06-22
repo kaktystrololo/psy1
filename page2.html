@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основные идеи психоанализа</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #f5f9ff;
+            --text-color: #333;
+            --light-text: #ecf0f1;
+            --card-bg: #ffffff;
+            --shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav a {
+            color: var(--light-text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: var(--secondary-color);
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            padding: 0 10px;
+            line-height: 1.7;
+        }
+        
+        .concept {
+            background-color: #f8fafc;
+            padding: 1.2rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .concept-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .concept-title::before {
+            content: "•";
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            margin-right: 8px;
+        }
+        
+        .psychoanalysis-img {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid #ddd;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .psychoanalysis-img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="page1.html">Мотивация</a>
+            <a href="page2.html">Психоанализ</a>
+            <a href="page3.html">Фрейд</a>
+            <a href="page4.html">Задание</a>
+            <a href="page5.html">Что такое наука?</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Основные идеи психоанализа</h1>
+        
+        <img src="psy.jpg" alt="Схема структуры психики по Фрейду" class="psychoanalysis-img">
+        
+        <p>В основе психоаналитической теории лежит утверждение, что корень психологических проблем кроется в бессознательных процессах. Основные положения включают в себя следующие идеи:</p>
+        
+        <div class="concept">
+            <div class="concept-title">Бессознательное как источник мотивации</div>
+            <p>Человек не всегда осознает истинные причины своих поступков, мыслей и эмоций. Бессознательные процессы в сфере Id формируют его поведение и личность.</p>
+        </div>
+        
+        <div class="concept">
+            <div class="concept-title">Конфликт между сознательным (Ego) и бессознательным (Id)</div>
+            <p>Внутренние противоречия между осознанными желаниями и подавленными импульсами приводят к возникновению невротических симптомов и психических расстройств.</p>
+        </div>
+        
+        <div class="concept">
+            <div class="concept-title">Роль детства</div>
+            <p>Ранние жизненные переживания, особенно связанные с родительскими фигурами, оказывают глубокое влияние на развитие личности.</p>
+        </div>
+        
+        <div class="concept">
+            <div class="concept-title">Перенос</div>
+            <p>В процессе психотерапии пациент переносит чувства и отношения, сформированные в детстве, на аналитика, что позволяет выявить скрытые эмоциональные конфликты.</p>
+        </div>
+        
+        <div class="concept">
+            <div class="concept-title">Символизм сновидений</div>
+            <p>Сны рассматриваются как важное окно в бессознательное, где скрытые желания и тревоги могут быть представлены в символической форме.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 ГГТУ | Кафедра психологии</p>
+    </footer>
+</body>
+</html>

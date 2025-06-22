@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Психология образования - Главная</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-color: #f5f9ff;
+            --text-color: #333;
+            --light-text: #ecf0f1;
+            --card-bg: #ffffff;
+            --shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav a {
+            color: var(--light-text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: var(--secondary-color);
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        .hero {
+            max-width: 100%;
+            padding: 3rem 1rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .main-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 2rem auto;
+            display: block;
+            border: 3px solid white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        h1, h2 {
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            padding-bottom: 10px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        h2 {
+            margin-top: 2rem;
+            font-size: 1.6rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            line-height: 1.7;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+        
+        .feature-card {
+            flex-basis: calc(33% - 1rem);
+            background-color: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .feature-card {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="page1.html">Мотивация</a>
+            <a href="page2.html">Психоанализ</a>
+            <a href="page3.html">Фрейд</a>
+            <a href="page4.html">Задания</a>
+            <a href="page5.html">Что такое наука?</a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h1>Психология образования</h1>
+        <p>Изучаем когнитивные процессы и методы эффективного обучения</p>
+        <!-- Замените ссылку на ваше изображение -->
+        <img src="brains.jpeg" alt="Психология образования" class="main-image">
+    </div>
+    
+    <div class="container">
+        <h1>Добро пожаловать на наш образовательный портал</h1>
+        
+        <p>Этот сайт посвящен психологическим аспектам образования. Здесь вы найдете информацию о мотивации студентов, когнитивных процессах обучения, теориях психоанализа и их влиянии на образовательный процесс.</p>
+        
+        <h2>Наши основные темы</h2>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Мотивация</h3>
+                <p>Изучаем внутренние и внешние факторы, влияющие на желание учиться и достигать академических успехов.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Психоанализ</h3>
+                <p>Разбираем теории Фрейда и их применение в современной образовательной практике.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Когнитивные процессы</h3>
+                <p>Анализируем как восприятие, память и мышление влияют на усвоение знаний.</p>
+            </div>
+        </div>
+        
+        <h2>О проекте</h2>
+        <p>Этот образовательный проект создан для студентов, преподавателей и всех, кто интересуется психологией обучения. Мы собрали актуальную информацию из современных исследований и классических теорий, чтобы помочь вам лучше понять процесс обучения.</p>
+    </div>
+    
+    <footer>
+        <p>© 2025 Кафедра психологии образования ГГТУ</p>
+        <p>Все материалы защищены авторским правом</p>
+    </footer>
+</body>
+</html>
